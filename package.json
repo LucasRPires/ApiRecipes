@@ -1,0 +1,32 @@
+{
+  "name": "deliverymuch",
+  "version": "1.0.0",
+  "description": "Teste DeliveryMuch",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-node-express": "^2.1.3",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect=0.0.0.0:9229 src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasRPires/ApiRecipes.git"
+  },
+  "author": "Lucas Pires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasRPires/ApiRecipes/issues"
+  },
+  "homepage": "https://github.com/LucasRPires/ApiRecipes#readme"
+}
