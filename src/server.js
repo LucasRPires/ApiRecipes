@@ -4,4 +4,4 @@ const app = require('./app');
 
 swagger(app);
 
-app.listen(process.env.PORT, process.env.HOST);
+app.listen(process.env.PORT, '0.0.0.0');

@@ -1,5 +1,4 @@
 const express = require('express');
-
 /**
  * AppController to register rules and middlewares
  */
