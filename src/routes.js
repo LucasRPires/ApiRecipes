@@ -23,7 +23,7 @@ const {success, error} = require('./http/responseApi');
  *         description: the ingredient must exist in the recipe
  *     responses:
  *       200:
- *         description: Array of collection data loaded
+ *         description: Array of recipes with ingredients choised
  *         schema:
  *           type: object
  *           properties:
