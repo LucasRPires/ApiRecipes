@@ -53,6 +53,7 @@ O projeto segue alguns padrões de projetos e conceitos de programação orienta
 - [x] SOLID
 - [x] Dependency Injection
 - [x] Unit Tests
+- [x] Git flow
 - [x] Docker
 - [x] Clean Code
 - [x] Lint
