@@ -25,7 +25,7 @@ PORT=3000
 RECIPE_PUPPY_API='http://www.recipepuppy.com/api/?i='
 
 GIPHY_API='https://api.giphy.com/v1/gifs/search'
-GIPHY_API_KEY=''
+GIPHY_API_KEY='Dg8qpCjhIkM0568G2MMgqeyIAfVSoAXt'
 ```
 
 A api irá executar na porta padrão do arquivo *.env, após executar o container, navegue até seu navegado em: 
