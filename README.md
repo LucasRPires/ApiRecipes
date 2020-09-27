@@ -1,50 +1,59 @@
 # ApiRecipe
 Uma Api de integração á outros serviços como: Recipe Puppy e Giphy
 
+## Requerimentos
+Para executar o projeto, você precisará dessas bibliotecas:
+```bash
+Docker 19.^
+Docker-compose 1.^
+Node 12.^
+```
+
 ## Instalação
 Após clonar o projeto, no diretório raiz:
 ```bash
-composer install
-```
-```bash
-composer dump-autoload -o
+docker-compose up --build 
 ```
 
 ## Usabilidade
-No diretório raiz do projeto você irá encontrar um arquivo denominamdo *ticket.sql*. Importe e execute ele em seu client do *Mysql*.
+Crie um arquivo no diretório raiz do projeto com o nome *.env* seguindo o modelo do arquivo *.env.exemple*
+```
+NODE_ENV="dev"
+
+PORT=3000
+
+RECIPE_PUPPY_API='http://www.recipepuppy.com/api/?i='
+
+GIPHY_API='https://api.giphy.com/v1/gifs/search'
+GIPHY_API_KEY=''
+```
+
+A api irá executar na porta padrão do arquivo *.env, após executar o container, navegue até seu navegado em: 
 ```bash
-ticket.sql
+localhos:[PORT]
 ```
 
-Para configurar o banco de dados, crie um arquivo no diretório raiz do projeto com o nome *.env* seguindo o modelo do arquivo *.env.exemple*
-```
-MYSQL_HOST=127.0.0.1
-MYSQL_DB=your_db
-MYSQL_PORT=3306
-MYSQL_USER=root
-MYSQL_PASS=
-```
+Por padrão, o navegador irá lhe redirecionar para a interface de teste e documentação: Swagger:
+![](/images/swagger_init.png)
 
-![](App/assests/images/DER_BD.PNG)
+Cique em Try it out e insira os ingredientes:
+![](/images/swagger_parameters.png)
 
-Para utilizar o projeto em questão, navegue até o diretório clonado. Ex:
-```
-http://localhost:80/Meu_Projeto_FacTicket
-```
+Formato de resposta da Api:
+![](/images/swagger_response.png)
 
-O projeto contém testes de unidade para garantir a consistência do código e das informações trafegadas. Para executar os testes basta navegar até a pasta raiz do projeto e executar:
+## Testes
+Para executar os testes:
 ```
-.\vendor\bin\phpunit
+npm test
 ```
 
 ## Tecnologias e Conceitos Utilizados
 O projeto segue alguns padrões de projetos e conceitos de programação orientada á objetos. São eles:
 - [x] SOLID
-- [x] Factory
 - [x] Dependency Injection
-- [x] DDD
-- [x] MVC + S
 - [x] Unit Tests
-- [x] Autoload
-- [x] OO
+- [x] Docker
+- [x] Clean Code
+- [x] Lint
 - [x] Environment Variables
