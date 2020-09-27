@@ -7,10 +7,11 @@ class GiphyRepository extends BaseRepository {
     /**
      * @desc contructor
      *
+     * @param {string} host api giphy
      */
-    constructor() {
+    constructor(host=process.env.GIPHY_API) {
         super();
-        this.host = process.env.GIPHY_API;
+        this.host = host;
         this.apiKey = process.env.GIPHY_API_KEY;
     }
 
@@ -18,7 +19,7 @@ class GiphyRepository extends BaseRepository {
      * @param {string} titleRecipe
      * @param {number} limit
      * @param {number} offset
-     * 
+     *
      * @return {object} axios get
      */
     getGifByTitleRecipe(titleRecipe, limit, offset) {

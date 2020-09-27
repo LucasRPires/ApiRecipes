@@ -19,8 +19,8 @@
     "jest": "^26.4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect=0.0.0.0:9229 src/server.js --ignore __tests__"
+    "test": "jest",
+    "start": "nodemon --inspect=0.0.0.0:9229 src/server.js"
   },
   "repository": {
     "type": "git",

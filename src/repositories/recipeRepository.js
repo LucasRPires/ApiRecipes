@@ -7,10 +7,11 @@ class RecipeRepository extends BaseRepository {
     /**
      * @desc contructor
      *
+     * @param {string} recipePuppyUrl
      */
-    constructor() {
+    constructor(recipePuppyUrl=process.env.RECIPE_PUPPY_API) {
         super();
-        this.host = process.env.RECIPE_PUPPY_API;
+        this.host = recipePuppyUrl;
     }
 
     /**
