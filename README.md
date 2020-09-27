@@ -30,7 +30,7 @@ GIPHY_API_KEY=''
 
 A api irá executar na porta padrão do arquivo *.env, após executar o container, navegue até seu navegado em: 
 ```bash
-localhos:[PORT]
+http://localhos:[PORT]
 ```
 
 Por padrão, o navegador irá lhe redirecionar para a interface de teste e documentação: Swagger:
