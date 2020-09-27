@@ -15,11 +15,12 @@
   },
   "devDependencies": {
     "eslint": "^7.9.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "jest": "^26.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect=0.0.0.0:9229 src/server.js"
+    "start": "nodemon --inspect=0.0.0.0:9229 src/server.js --ignore __tests__"
   },
   "repository": {
     "type": "git",

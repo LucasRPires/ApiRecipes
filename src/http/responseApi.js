@@ -20,11 +20,12 @@ exports.success = (message, results, statusCode) => {
  *
  * @param   {string} message
  * @param   {number} statusCode
+ * @param   {object | Array} data
  * @return  {object} response Body Error
  */
-exports.error = (message, statusCode) => {
+exports.error = (message, statusCode, data=null) => {
     // List of common HTTP request code
-    const codes = [200, 201, 400, 401, 404, 403, 422, 500];
+    const codes = [200, 201, 400, 401, 404, 403, 422, 500, 503];
 
     // Get matched code
     const findCode = codes.find((code) => code == statusCode);
@@ -36,6 +37,7 @@ exports.error = (message, statusCode) => {
         message,
         code: statusCode,
         error: true,
+        data: data,
     };
 };
 
