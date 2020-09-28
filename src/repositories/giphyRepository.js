@@ -8,11 +8,12 @@ class GiphyRepository extends BaseRepository {
      * @desc contructor
      *
      * @param {string} host api giphy
+     * @param {string} apiKey kei api giphy
      */
-    constructor(host=process.env.GIPHY_API) {
+    constructor(host=process.env.GIPHY_API, apiKey=process.env.GIPHY_API_KEY) {
         super();
         this.host = host;
-        this.apiKey = process.env.GIPHY_API_KEY;
+        this.apiKey = apiKey;
     }
 
     /**
