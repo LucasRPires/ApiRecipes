@@ -1,11 +1,12 @@
 FROM node:alpine
 
+RUN npm install -g nodemon
 WORKDIR /usr/app
 
-COPY package*.json ./
-RUN npm install
+COPY package*.json /usr/app/
+RUN npm install && mv /usr/app/node_modules /node_modules
 
-COPY . .
+COPY . /usr/app
 
 EXPOSE 3000
 
