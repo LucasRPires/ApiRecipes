@@ -12,6 +12,7 @@ Node 12.^
 ## Instalação
 Após clonar o projeto, no diretório raiz:
 ```bash
+npm install nodemon
 docker-compose up --build 
 ```
 
