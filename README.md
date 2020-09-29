@@ -12,6 +12,7 @@ Node 12.^
 ## Instalação
 Após clonar o projeto, no diretório raiz:
 ```bash
+npm install nodemon
 docker-compose up --build 
 ```
 
@@ -22,7 +23,7 @@ NODE_ENV="dev"
 
 PORT=3000
 
-RECIPE_PUPPY_API='http://www.recipepuppy.com/api/?i='
+RECIPE_PUPPY_API='http://www.recipepuppy.com/api/'
 
 GIPHY_API='https://api.giphy.com/v1/gifs/search'
 GIPHY_API_KEY='Dg8qpCjhIkM0568G2MMgqeyIAfVSoAXt'
